@@ -52,7 +52,7 @@ jobs:
       DASHBOARD_GROUP: ${{ secrets.DASHBOARD_GROUP || 'nic.ua' }}
       # ---- 阶段 F RenewHelper（开关/标签=Secrets 可自定义带默认值；URL/密码=Secrets）----
       # RENEWHELPER_SYNC_ENABLED=true=--开启阶段 F RenewHelper，关闭用false
-      RENEWHELPER_SYNC_ENABLED: ${{ secrets.RENEWHELPER_SYNC_ENABLED || 'true' }}
+      RENEWHELPER_SYNC_ENABLED: ${{ secrets.RENEWHELPER_SYNC_ENABLED || 'false' }}
       RENEWHELPER_URL: ${{ secrets.RENEWHELPER_URL }}
       RENEWHELPER_PASSWORD: ${{ secrets.RENEWHELPER_PASSWORD }}
       RENEWHELPER_LABEL: ${{ secrets.RENEWHELPER_LABEL || 'RenewHelper同步' }}
