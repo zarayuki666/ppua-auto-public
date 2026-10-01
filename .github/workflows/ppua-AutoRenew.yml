@@ -66,7 +66,7 @@ jobs:
       COLLECT_TG_FOR_DOMAIN: ${{ secrets.COLLECT_TG_FOR_DOMAIN || 'true' }}
       # 域名列表截图开关：SHOW_DOMAIN_LIST=true(默认 true) 时每账号处理完生成「域名列表」长图并发送到 TG；
       # =false 时不生成域名列表截图、也不发送该截图
-      SHOW_DOMAIN_LIST: ${{ secrets.SHOW_DOMAIN_LIST || 'true' }}
+      SHOW_DOMAIN_LIST: ${{ secrets.SHOW_DOMAIN_LIST || 'false' }}
 
     steps:
       - name: 检出触发/公开仓库
